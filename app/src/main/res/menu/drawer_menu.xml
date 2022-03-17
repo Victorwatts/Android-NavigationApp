@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <group>
+
+        <item android:title="User:">
+            <menu>
+
+                <item
+                    android:id="@+id/user_name_display"
+                    android:checkable="false"
+                    android:title="" />
+
+            </menu>
+        </item>
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home" />
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="Settings" />
+
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_baseline_exit_to_app_24"
+        android:title="Logout" />
+
+        <item android:title="Measurement System">
+            <menu>
+
+            <item
+                android:id="@+id/nav_itemimp"
+                app:actionLayout="@layout/drawer_switch"
+                android:title="@string/imperial" />
+
+            </menu>
+        </item>
+
+    </group>
+
+
+
+
+</menu>

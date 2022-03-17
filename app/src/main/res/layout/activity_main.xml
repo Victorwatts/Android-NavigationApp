@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+
+        android:orientation="vertical">
+
+
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="821dp">
+
+
+        <include
+            layout="@layout/drawer_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <include
+            layout="@layout/content_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigationView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/drawer_header"
+            app:menu="@menu/drawer_menu" />
+
+
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/mapid"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="56dp"/>
+
+
+
+
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/current_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_baseline_location_searching_24"
+        android:layout_gravity="end|bottom"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="160dp"
+        android:focusable="true">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:textAlignment="center"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="2dp"
+        android:inputType="text"
+        android:textSize="15dp"
+        android:background="@drawable/speed_duration"
+        android:visibility="gone"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/duration"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="70dp"
+        android:layout_marginLeft="2dp"
+        android:inputType="text"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        android:background="@drawable/speed_duration"
+        android:visibility="gone"
+        android:text="" />
+
+
+    <TextView
+        android:id="@+id/type_measure"
+        android:layout_width="150dp"
+        android:layout_height="38dp"
+        android:inputType="text"
+        android:visibility="invisible"
+        android:text="" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_baseline_search_24"
+        android:layout_gravity="end|bottom"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="80dp"
+        android:focusable="true">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemBackground="@android:color/holo_blue_bright"
+        app:itemIconTint="@android:color/white"
+        app:itemTextColor="@android:color/white"
+        android:layout_gravity="bottom"
+        app:menu="@menu/bottom_nav_menu"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+
+
+
+

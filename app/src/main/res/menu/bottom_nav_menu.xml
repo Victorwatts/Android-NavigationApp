@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_favorites"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_stars_24"
+        android:title="Favorites"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_add"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_photo_camera_24"
+        android:title="Go To Picture"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_filter"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_filter_alt_24"
+        android:title="Filter"
+        app:showAsAction="ifRoom" />
+
+</menu>

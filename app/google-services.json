@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1026607382280",
+    "firebase_url": "https://monkey-see-monkey-do-41fda-default-rtdb.firebaseio.com",
+    "project_id": "monkey-see-monkey-do-41fda",
+    "storage_bucket": "monkey-see-monkey-do-41fda.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1026607382280:android:ed970268a4ba00c339f6bd",
+        "android_client_info": {
+          "package_name": "com.nav.monkeyseemonkeydo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1026607382280-0g2c9rolemre9ju86r0t06osa7dcevvv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCcJJYMLChZ1N11g1vjCDz1iTVN0cw8H0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1026607382280-0g2c9rolemre9ju86r0t06osa7dcevvv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

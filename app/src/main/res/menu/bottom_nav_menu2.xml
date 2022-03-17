@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_favorites"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_add"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_photo_camera_24"
+        android:title="Take Picture"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_filter"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_autorenew_24"
+        android:title="Reload"
+        app:showAsAction="ifRoom" />
+
+</menu>

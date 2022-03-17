@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/lvparent"
+    android:padding="5dp">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center_horizontal"
+            android:text="USER SIGN UP"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="start"
+        android:text="Enter Email Address"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edtEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="@drawable/myedittextbg"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="@string/email_address"
+        android:padding="5dp"
+        android:textColor="#2d3436" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="start"
+        android:text="Enter Username"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edtUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="@drawable/myedittextbg"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="@string/enter_username"
+        android:padding="5dp"
+        android:textColor="#2d3436" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="start"
+        android:text="Enter First name"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edtFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="@drawable/myedittextbg"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="@string/enter_firstname"
+        android:padding="5dp"
+        android:textColor="#2d3436" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="start"
+        android:text="Enter Surname"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edtSurName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="@drawable/myedittextbg"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="@string/enter_Surname"
+        android:padding="5dp"
+        android:textColor="#2d3436" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="start"
+        android:text="Password"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="@drawable/myedittextbg"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="@string/enter_password"
+        android:padding="5dp"
+        android:inputType="textPassword"
+        android:textColor="#2d3436" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="start"
+        android:text="Confirm Password"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edtConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="@drawable/myedittextbg"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="@string/confirm_password"
+        android:padding="5dp"
+        android:inputType="textPassword"
+        android:textColor="#2d3436" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal">
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/mybtn"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="SIGN UP"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/btnGoToLogin"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/mybtn"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Go To Login"
+        android:textColor="#fff" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/pbbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="invisible"/>
+
+</LinearLayout>
